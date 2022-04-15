@@ -1,0 +1,38 @@
+p, h1, h2, h3,h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: #F5F5F5;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #06345D;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #EF8686;
+  text-decoration: none;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
